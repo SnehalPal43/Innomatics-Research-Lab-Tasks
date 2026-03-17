@@ -190,6 +190,7 @@ def remove_cart(pid: int, response: Response):
 
 # ===== ORDERS =====
 @app.get("/orders")
+
 def all_orders():
     return {"orders": orders, "total_orders": len(orders)}
 
